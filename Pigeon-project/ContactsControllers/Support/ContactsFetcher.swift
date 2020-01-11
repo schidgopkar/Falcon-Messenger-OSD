@@ -45,6 +45,7 @@ class ContactsFetcher: NSObject {
       
       let phoneNumbers = contacts.flatMap({$0.phoneNumbers.map({$0.value.stringValue.digits})})
       localPhones = phoneNumbers
+        print("Local Phones", localPhones)
       self.delegate?.contacts(updateDatasource: contacts)
     }
   }

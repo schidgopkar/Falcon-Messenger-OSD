@@ -80,11 +80,9 @@ class FalconUsersFetcher: NSObject {
     
     
     for number in localPhones {
-      do {
-        let countryCode = try phoneNumberKit.parse(number).countryCode
-        let nationalNumber = try phoneNumberKit.parse(number).nationalNumber
-        preparedNumber = "+" + String(countryCode) + String(nationalNumber)
-      } catch {}
+
+        preparedNumber = "+" + String(number)        
+        print("Prepared Number ************",preparedNumber)
       
       fetchAndObserveFalconUser(for: preparedNumber, asynchronously: true)
     }

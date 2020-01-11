@@ -114,6 +114,8 @@ class ChatInputContainerView: UIView {
     
     return recordVoiceButton
   }()
+    
+    
   
   let sendButton: UIButton = {
     let sendButton = UIButton(type: .custom)

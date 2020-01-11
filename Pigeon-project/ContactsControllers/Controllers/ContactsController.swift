@@ -311,6 +311,8 @@ extension ContactsController: ContactsUpdatesDelegate {
       viewPlaceholder.add(for: view, title: .denied, subtitle: .denied, priority: .high, position: .top)
       return
     }
-    viewPlaceholder.remove(from: view, priority: .high)
+    DispatchQueue.main.async {
+        self.viewPlaceholder.remove(from: self.view, priority: .high)
+    }
   }
 }

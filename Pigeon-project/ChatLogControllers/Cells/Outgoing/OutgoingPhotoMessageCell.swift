@@ -36,6 +36,7 @@ class PhotoMessageCell: BaseMediaMessageCell {
     progressView.centerYAnchor.constraint(equalTo: bubbleView.centerYAnchor).isActive = true
     progressView.widthAnchor.constraint(equalToConstant: 60).isActive = true
     progressView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    
   }
 
   func setupData(message: Message) {

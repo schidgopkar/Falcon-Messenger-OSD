@@ -50,6 +50,7 @@ class ChatInputContainerView: UIView {
       sendButton.addTarget(chatLogController, action: #selector(ChatLogController.handleSend), for: .touchUpInside)
       attachButton.addTarget(chatLogController, action: #selector(ChatLogController.togglePhoto), for: .touchDown)
       recordVoiceButton.addTarget(chatLogController, action: #selector(ChatLogController.toggleVoiceRecording), for: .touchDown)
+        selfDestructMessageButton.addTarget(chatLogController, action: #selector(ChatLogController.toggleSelfDestructiveMessage), for: .touchDown)
     }
   }
   
@@ -115,7 +116,14 @@ class ChatInputContainerView: UIView {
     return recordVoiceButton
   }()
     
-    
+    let selfDestructMessageButton: UIButton = {
+        let selfDestructMessageButton = UIButton()
+        selfDestructMessageButton.tintColor = FalconPalette.defaultBlue
+        selfDestructMessageButton.translatesAutoresizingMaskIntoConstraints = false
+        selfDestructMessageButton.setImage(UIImage(named: "selfDestruct"), for: .normal)
+        selfDestructMessageButton.setImage(UIImage(named: "selfDestructSelected"), for: .selected)
+        return selfDestructMessageButton
+    }()
   
   let sendButton: UIButton = {
     let sendButton = UIButton(type: .custom)
@@ -159,6 +167,7 @@ class ChatInputContainerView: UIView {
     
     addSubview(attachButton)
     addSubview(recordVoiceButton)
+    addSubview(selfDestructMessageButton)
     addSubview(inputTextView)
     addSubview(sendButton)
     addSubview(placeholderLabel)
@@ -182,10 +191,17 @@ class ChatInputContainerView: UIView {
     attachButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
     attachButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
     
+    NSLayoutConstraint.activate([
+        selfDestructMessageButton.leftAnchor.constraint(equalTo: attachButton.rightAnchor),
+        selfDestructMessageButton.bottomAnchor.constraint(equalTo: bottomAnchor),
+        selfDestructMessageButton.heightAnchor.constraint(equalToConstant: 50),
+        selfDestructMessageButton.widthAnchor.constraint(equalToConstant: 35)
+    ])
+    
     recordVoiceButton.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     recordVoiceButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
     recordVoiceButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
-    recordVoiceButton.leftAnchor.constraint(equalTo: attachButton.rightAnchor, constant: 0).isActive = true
+    recordVoiceButton.leftAnchor.constraint(equalTo: selfDestructMessageButton.rightAnchor, constant: 0).isActive = true
     
     inputTextView.topAnchor.constraint(equalTo: topAnchor, constant: 6).isActive = true
     inputTextView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6).isActive = true

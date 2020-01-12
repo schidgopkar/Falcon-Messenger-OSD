@@ -571,6 +571,16 @@ class ChatLogController: UICollectionViewController {
       navigationItem.rightBarButtonItem?.isEnabled = false
     }
   }
+    
+    var isSelfDestrutive = false
+    
+    @objc func toggleSelfDestructiveMessage(){
+        
+         inputContainerView.selfDestructMessageButton.isSelected = !inputContainerView.selfDestructMessageButton.isSelected
+        
+        isSelfDestrutive = !isSelfDestrutive
+        
+    }
 
   @objc func getInfoAction() {
 
@@ -656,7 +666,7 @@ class ChatLogController: UICollectionViewController {
       mediaPickerController.collectionView.deselectAllItems()
     }
     inputContainerView.prepareForSend()
-    let messageSender = MessageSender(conversation, text: text, media: media)
+    let messageSender = MessageSender(conversation, text: text, media: media, selfDestructive: isSelfDestrutive)
     messageSender.delegate = self
     messageSender.sendMessage()
   }

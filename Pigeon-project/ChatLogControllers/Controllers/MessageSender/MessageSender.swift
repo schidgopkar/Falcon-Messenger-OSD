@@ -21,14 +21,16 @@ class MessageSender: NSObject {
   fileprivate var conversation: Conversation?
   fileprivate var attachedMedia = [MediaObject]()
   fileprivate var text: String?
+    fileprivate var selfDestructive:Bool?
   fileprivate let reference = Database.database().reference()
   
   weak var delegate: MessageSenderDelegate?
   
-  init(_ conversation: Conversation?, text: String?, media: [MediaObject]) {
+    init(_ conversation: Conversation?, text: String?, media: [MediaObject], selfDestructive:Bool) {
     self.conversation = conversation
     self.text = text
     self.attachedMedia = media
+    self.selfDestructive = selfDestructive
   }
   
   public func sendMessage() {
@@ -102,7 +104,8 @@ class MessageSender: NSObject {
                                             "seen": false as AnyObject,
                                             "fromId": fromID as AnyObject,
                                             "timestamp": timestamp,
-                                            "text": text as AnyObject]
+                                            "text": text as AnyObject,
+                                            "selfDestructive":selfDestructive as AnyObject]
     
     delegate?.update(with: defaultData)
     self.mediaToSend.append((values: defaultData, reference: reference))
@@ -131,7 +134,8 @@ class MessageSender: NSObject {
                                             "fromId": fromID as AnyObject,
                                             "timestamp": timestamp,
                                             "imageWidth": object.object!.asUIImage!.size.width as AnyObject,
-                                            "imageHeight": object.object!.asUIImage!.size.height as AnyObject]
+                                            "imageHeight": object.object!.asUIImage!.size.height as AnyObject,
+                                            "selfDestructive":selfDestructive as AnyObject]
     
     var localData: [String: AnyObject] = ["localImage": object.object!.asUIImage!]  //"localVideoUrl": path as AnyObject]
     defaultData.forEach({ localData[$0] = $1 })
@@ -180,7 +184,8 @@ class MessageSender: NSObject {
                                             "fromId": fromID as AnyObject,
                                             "timestamp": timestamp,
                                             "imageWidth": object.object!.asUIImage!.size.width as AnyObject,
-                                            "imageHeight": object.object!.asUIImage!.size.height as AnyObject]
+                                            "imageHeight": object.object!.asUIImage!.size.height as AnyObject,
+                                            "selfDestructive":selfDestructive as AnyObject]
     
     
     var localData: [String: AnyObject] = ["localImage": object.object!.asUIImage!, "localVideoUrl": path as AnyObject]
@@ -237,7 +242,8 @@ class MessageSender: NSObject {
                                             "seen": false as AnyObject,
                                             "fromId": fromID as AnyObject,
                                             "timestamp": timestamp,
-                                            "voiceEncodedString": bae64string as AnyObject]
+                                            "voiceEncodedString": bae64string as AnyObject,
+                                            "selfDestructive":selfDestructive as AnyObject]
     delegate?.update(with: defaultData)
     mediaToSend.append((values: defaultData, reference: reference))
     mediaUploadGroup.leave()

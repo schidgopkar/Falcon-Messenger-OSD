@@ -26,6 +26,8 @@ class Message: NSObject  {
     var toId: String?
     var timestamp: NSNumber?
     var convertedTimestamp: String?
+    
+    var selfDestructive:Bool?
   
     var status: String?
     var seen: Bool?
@@ -65,6 +67,8 @@ class Message: NSObject  {
         timestamp = dictionary["timestamp"] as? NSNumber
       
         convertedTimestamp = dictionary["convertedTimestamp"] as? String
+        
+        selfDestructive = dictionary["selfDestructive"] as? Bool
       
         status = dictionary["status"] as? String
         seen = dictionary["seen"] as? Bool

@@ -18,15 +18,18 @@ class IncomingPhotoMessageCell: BaseMediaMessageCell {
     bubbleView.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(handleLongTap(_:))) )
     
     contentView.addSubview(bubbleView)
-    
+        
     bubbleView.addSubview(messageImageView)
     
     bubbleView.addSubview(nameLabel)
+    
+    bubbleView.addSubview(messageSelfDestructionCountdownLabel)
     
     bubbleView.frame.origin = CGPoint(x: 10, y: 0)
     
     bubbleView.frame.size.width = 200
     
+
     progressView.strokeColor = .black
    
     bubbleView.image = grayBubbleImage
@@ -49,6 +52,8 @@ class IncomingPhotoMessageCell: BaseMediaMessageCell {
     progressView.centerYAnchor.constraint(equalTo: bubbleView.centerYAnchor).isActive = true
     progressView.widthAnchor.constraint(equalToConstant: 60).isActive = true
     progressView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+    
+
   }
   
   func setupData(message: Message, isGroupChat: Bool) {

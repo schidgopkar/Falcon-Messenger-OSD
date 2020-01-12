@@ -63,6 +63,9 @@ class IncomingTextMessageCell: BaseMessageCell {
     textView.addSubview(nameLabel)
     bubbleView.image = grayBubbleImage
     bubbleView.frame.origin = CGPoint(x: 10, y: 0)
+    
+    contentView.addSubview(messageSelfDestructionCountdownLabel)
+
   }
 
   override func prepareViewsForReuse() {

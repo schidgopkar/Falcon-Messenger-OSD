@@ -19,6 +19,7 @@ class IncomingVoiceMessageCell: BaseVoiceMessageCell {
     bubbleView.image = grayBubbleImage
     bubbleView.frame.origin = CGPoint(x: 10, y: 0)
     bubbleView.frame.size.width = 150
+    bubbleView.addSubview(messageSelfDestructionCountdownLabel)
     playerView.playLeadingAnchor.constant = 15
     playerView.playWidthAnchor.constant = 20
     playerView.playHeightAnchor.constant = -5
@@ -27,6 +28,8 @@ class IncomingVoiceMessageCell: BaseVoiceMessageCell {
     playerView.play.setImage(UIImage(named: "pauseBlack"), for: .selected)
     playerView.play.setImage(UIImage(named: "playBlack"), for: .normal)
     playerView.timerLabel.textColor = .black
+    
+
   }
   
   func setupData(message: Message, isGroupChat: Bool) {

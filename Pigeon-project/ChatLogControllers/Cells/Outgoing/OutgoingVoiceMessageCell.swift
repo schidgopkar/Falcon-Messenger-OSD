@@ -26,6 +26,7 @@ class OutgoingVoiceMessageCell: BaseVoiceMessageCell {
     playerView.play.setImage(UIImage(named: "pause"), for: .selected)
     playerView.play.setImage(UIImage(named: "playWhite"), for: .normal)
     playerView.timerLabel.textColor = .white
+    
   }
 
   func setupData(message: Message) {

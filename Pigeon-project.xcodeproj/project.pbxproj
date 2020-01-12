@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
+		47E58ACC23CB2FEC00945AE0 /* VoiceChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */; };
 		4B4F452F1F32230C00A6FF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F452E1F32230C00A6FF96 /* AppDelegate.swift */; };
 		4B4F45381F32230C00A6FF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F45371F32230C00A6FF96 /* Assets.xcassets */; };
 		4B4F45431F32246000A6FF96 /* GeneralTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F45421F32246000A6FF96 /* GeneralTabBarController.swift */; };
@@ -195,6 +196,7 @@
 /* Begin PBXFileReference section */
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatController.swift; sourceTree = "<group>"; };
 		4B4F452B1F32230C00A6FF96 /* Pigeon-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pigeon-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4F452E1F32230C00A6FF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4F45371F32230C00A6FF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -673,6 +675,7 @@
 				4BAEE4BC21272D880045AB10 /* ChatLogController+ImageZoomHandlers.swift */,
 				4BAEE4BA21272D880045AB10 /* ChatLogController+MediaPickerHandlers.swift */,
 				4BAEE4E021272D880045AB10 /* ChatLogController+VoiceRecordingHandlers.swift */,
+				47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1416,6 +1419,7 @@
 				4BAEE5DE212735E50045AB10 /* TransitionController.swift in Sources */,
 				4BAEE4F721272D890045AB10 /* SelectChatTableViewController+SearchHandlers.swift in Sources */,
 				4BAEE5D0212735E50045AB10 /* SelectParticipantsViewController.swift in Sources */,
+				47E58ACC23CB2FEC00945AE0 /* VoiceChatController.swift in Sources */,
 				4BAEE51621272D890045AB10 /* GroupAdminControlsTableViewCell.swift in Sources */,
 				4BAEE5E7212735E50045AB10 /* SelectCountryCodeController.swift in Sources */,
 				4BAEE50D21272D890045AB10 /* ChatsTableViewController+TableRowActionHandlers.swift in Sources */,

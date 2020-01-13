@@ -1,0 +1,6 @@
+framework module AgoraAudioKit {
+    umbrella header "AgoraRtcEngineKit.h"
+    
+    export *
+    module * { export * }
+}

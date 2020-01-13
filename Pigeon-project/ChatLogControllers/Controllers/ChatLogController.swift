@@ -563,14 +563,28 @@ class ChatLogController: UICollectionViewController {
     infoButton.addTarget(self, action: #selector(getInfoAction), for: .touchUpInside)
     let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
 
+    let voiceChatButton = UIBarButtonItem(image: UIImage(named: "voiceChat"), style: .plain, target: self, action: #selector(voiceChatBarButtonTapped))
+    
+    navigationItem.setRightBarButtonItems([infoBarButtonItem, voiceChatButton], animated: false)
+    
     guard let uid = Auth.auth().currentUser?.uid, let conversationID = conversation?.chatID, uid != conversationID else { return }
-    navigationItem.rightBarButtonItem = infoBarButtonItem
     if isCurrentUserMemberOfCurrentGroup() {
       navigationItem.rightBarButtonItem?.isEnabled = true
     } else {
       navigationItem.rightBarButtonItem?.isEnabled = false
     }
   }
+    
+    
+    @objc func voiceChatBarButtonTapped(){
+        
+        
+        let voiceChatViewController = VoiceChatController()
+        
+        voiceChatViewController.partnerNameLabel.text = conversation?.chatName
+        
+        self.present(voiceChatViewController, animated: true, completion: nil)
+    }
     
     var isSelfDestrutive = false
     

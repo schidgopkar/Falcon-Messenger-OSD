@@ -10,6 +10,15 @@
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
 		47E58ACC23CB2FEC00945AE0 /* VoiceChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */; };
+		47E58ADD23CB5F2900945AE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */; };
+		47E58ADF23CB5F3800945AE0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58ADE23CB5F3800945AE0 /* CoreMedia.framework */; };
+		47E58AE223CB5F6C00945AE0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE123CB5F6C00945AE0 /* CoreTelephony.framework */; };
+		47E58AE423CB5F8100945AE0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE323CB5F8000945AE0 /* AVFoundation.framework */; };
+		47E58AE623CB5F8E00945AE0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE523CB5F8E00945AE0 /* AudioToolbox.framework */; };
+		47E58AE823CB5FA000945AE0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE723CB5FA000945AE0 /* Accelerate.framework */; };
+		47E58AEA23CB600A00945AE0 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE923CB600A00945AE0 /* CoreServices.framework */; };
+		47E58AFB23CB6E9100945AE0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AF823CB682800945AE0 /* libresolv.tbd */; };
+		47E58AFC23CB6E9900945AE0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58AE023CB5F5300945AE0 /* libc++.tbd */; };
 		4B4F452F1F32230C00A6FF96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F452E1F32230C00A6FF96 /* AppDelegate.swift */; };
 		4B4F45381F32230C00A6FF96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B4F45371F32230C00A6FF96 /* Assets.xcassets */; };
 		4B4F45431F32246000A6FF96 /* GeneralTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4F45421F32246000A6FF96 /* GeneralTabBarController.swift */; };
@@ -197,6 +206,15 @@
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatController.swift; sourceTree = "<group>"; };
+		47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		47E58ADE23CB5F3800945AE0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		47E58AE023CB5F5300945AE0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		47E58AE123CB5F6C00945AE0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		47E58AE323CB5F8000945AE0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		47E58AE523CB5F8E00945AE0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		47E58AE723CB5FA000945AE0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		47E58AE923CB600A00945AE0 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		47E58AF823CB682800945AE0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		4B4F452B1F32230C00A6FF96 /* Pigeon-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pigeon-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4F452E1F32230C00A6FF96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B4F45371F32230C00A6FF96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -378,7 +396,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E58AE223CB5F6C00945AE0 /* CoreTelephony.framework in Frameworks */,
+				47E58AE823CB5FA000945AE0 /* Accelerate.framework in Frameworks */,
+				47E58ADF23CB5F3800945AE0 /* CoreMedia.framework in Frameworks */,
+				47E58AE423CB5F8100945AE0 /* AVFoundation.framework in Frameworks */,
+				47E58ADD23CB5F2900945AE0 /* SystemConfiguration.framework in Frameworks */,
+				47E58AFB23CB6E9100945AE0 /* libresolv.tbd in Frameworks */,
+				47E58AFC23CB6E9900945AE0 /* libc++.tbd in Frameworks */,
 				0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */,
+				47E58AE623CB5F8E00945AE0 /* AudioToolbox.framework in Frameworks */,
+				47E58AEA23CB600A00945AE0 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +415,15 @@
 		2AF4427B37282913090A248D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47E58AF823CB682800945AE0 /* libresolv.tbd */,
+				47E58AE923CB600A00945AE0 /* CoreServices.framework */,
+				47E58AE723CB5FA000945AE0 /* Accelerate.framework */,
+				47E58AE523CB5F8E00945AE0 /* AudioToolbox.framework */,
+				47E58AE323CB5F8000945AE0 /* AVFoundation.framework */,
+				47E58AE123CB5F6C00945AE0 /* CoreTelephony.framework */,
+				47E58AE023CB5F5300945AE0 /* libc++.tbd */,
+				47E58ADE23CB5F3800945AE0 /* CoreMedia.framework */,
+				47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */,
 				2897810158A4718FAC892931 /* libPods-Pigeon-project.a */,
 			);
 			name = Frameworks;
@@ -1607,9 +1643,20 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3WPJ33XN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon-project",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pigeon-project/libs",
+				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Pigeon-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pigeon-project/libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shrikantchidgopkar.psb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1632,9 +1679,20 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A3WPJ33XN8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pigeon-project",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pigeon-project/libs",
+				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Pigeon-project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Pigeon-project/libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shrikantchidgopkar.psb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

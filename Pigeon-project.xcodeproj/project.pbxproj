@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
+		47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
 		47E58ACC23CB2FEC00945AE0 /* VoiceChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */; };
 		47E58ADD23CB5F2900945AE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */; };
@@ -204,6 +205,7 @@
 
 /* Begin PBXFileReference section */
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatController.swift; sourceTree = "<group>"; };
 		47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -429,6 +431,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		47B8434B23CE0B0300D9406D /* StatusControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */,
+			);
+			path = StatusControllers;
+			sourceTree = "<group>";
+		};
 		4B4F45221F32230C00A6FF96 = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +460,7 @@
 		4B4F452D1F32230C00A6FF96 /* Pigeon-project */ = {
 			isa = PBXGroup;
 			children = (
+				47B8434B23CE0B0300D9406D /* StatusControllers */,
 				4BE9F1DE219B457C00C6768F /* Pigeon-project.entitlements */,
 				4BAEE47221272C4F0045AB10 /* AuthenticationControllers */,
 				4BAEE48821272C5E0045AB10 /* ContactsControllers */,
@@ -1375,6 +1386,7 @@
 				4BAEE4F621272D890045AB10 /* GroupPictureAvatarOpenerDelegate.swift in Sources */,
 				4BAEE4FB21272D890045AB10 /* InputBlockerContainerView.swift in Sources */,
 				4BAEE4F321272D890045AB10 /* GroupProfileTableHeaderContainer.swift in Sources */,
+				47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */,
 				4BAEE46421272B380045AB10 /* AccountSettingsTableViewCell.swift in Sources */,
 				4BAEE49721272C5E0045AB10 /* FalconUsersFetcher.swift in Sources */,
 				4BAEE48521272C4F0045AB10 /* AuthVerificationController.swift in Sources */,

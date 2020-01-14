@@ -61,36 +61,44 @@ class GeneralTabBarController: UITabBarController {
   let chatsController = ChatsTableViewController()
   let contactsController = ContactsController()
   let settingsController = AccountSettingsController()
+  let statusTableViewController = StatusTableViewController()
   
   fileprivate func setTabs() {
     
     contactsController.title = "Contacts"
     chatsController.title = "Chats"
     settingsController.title = "Settings"
+    statusTableViewController.title = "Status"
     
     let contactsNavigationController = UINavigationController(rootViewController: contactsController)
     let chatsNavigationController = UINavigationController(rootViewController: chatsController)
     let settingsNavigationController = UINavigationController(rootViewController: settingsController)
+    let statusNavigationController = UINavigationController(rootViewController: statusTableViewController)
     
     if #available(iOS 11.0, *) {
       settingsNavigationController.navigationBar.prefersLargeTitles = true
       chatsNavigationController.navigationBar.prefersLargeTitles = true
       contactsNavigationController.navigationBar.prefersLargeTitles = true
+        statusNavigationController.navigationBar.prefersLargeTitles = true
     }
     
     let contactsImage =  UIImage(named: "user")
     let chatsImage = UIImage(named: "chat")
     let settingsImage = UIImage(named: "settings")
+    let statusImage = UIImage(named:"status")
     
     let contactsTabItem = UITabBarItem(title: contactsController.title, image: contactsImage, selectedImage: nil)
     let chatsTabItem = UITabBarItem(title: chatsController.title, image: chatsImage, selectedImage: nil)
+    let statusTabItem = UITabBarItem(title: statusTableViewController.title, image: statusImage, selectedImage: nil)
     let settingsTabItem = UITabBarItem(title: settingsController.title, image: settingsImage, selectedImage: nil)
+    
     
     contactsController.tabBarItem = contactsTabItem
     chatsController.tabBarItem = chatsTabItem
+    statusTableViewController.tabBarItem = statusTabItem
     settingsController.tabBarItem = settingsTabItem
     
-    let tabBarControllers = [contactsNavigationController, chatsNavigationController as UIViewController, settingsNavigationController]
+    let tabBarControllers = [contactsNavigationController, chatsNavigationController as UIViewController, statusNavigationController, settingsNavigationController]
     viewControllers = tabBarControllers
     selectedIndex = Tabs.chats.rawValue
   }

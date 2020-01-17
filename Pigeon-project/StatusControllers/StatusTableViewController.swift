@@ -38,12 +38,21 @@ class StatusTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: myStatusCellID, for: indexPath) as? MyStatusTableViewCell
             else{
                 return UITableViewCell()
         }
         
+        
         cell.myStatusLabel.text = "Shrikant Chidgopkar"
+        
+        if indexPath.section == 1{
+            
+            cell.addStatusImageView.isHidden = true
+            cell.myStatusLabel.text = "contacts name"
+            cell.addStatusLabel.text = "Today at 3:00 PM"
+        }
         
         return cell
         

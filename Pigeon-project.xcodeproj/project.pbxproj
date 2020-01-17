@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
 		47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */; };
+		47B8434F23CEA69000D9406D /* MyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
 		47E58ACC23CB2FEC00945AE0 /* VoiceChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */; };
 		47E58ADD23CB5F2900945AE0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */; };
@@ -206,6 +207,7 @@
 /* Begin PBXFileReference section */
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
+		47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusTableViewCell.swift; sourceTree = "<group>"; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47E58ACB23CB2FEC00945AE0 /* VoiceChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChatController.swift; sourceTree = "<group>"; };
 		47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */,
+				47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */,
 			);
 			path = StatusControllers;
 			sourceTree = "<group>";
@@ -1511,6 +1514,7 @@
 				4BAEE4F921272D890045AB10 /* IncomingVoiceMessageCell.swift in Sources */,
 				4BAEE5D8212735E50045AB10 /* CameraOverlayView.swift in Sources */,
 				4BAEE5CC212735E50045AB10 /* ParticipantTableViewCell.swift in Sources */,
+				47B8434F23CEA69000D9406D /* MyStatusTableViewCell.swift in Sources */,
 				4BAEE5D5212735E50045AB10 /* AnnouncementShowing.swift in Sources */,
 				4BAEE5BD212735E50045AB10 /* INSPhoto.swift in Sources */,
 				4BAEE49921272C5E0045AB10 /* ContactsController+SearchHandlers.swift in Sources */,

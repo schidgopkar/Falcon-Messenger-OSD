@@ -87,6 +87,8 @@ class MyStatusTableViewCell: UITableViewCell {
         
         self.setupViews()
         
+        self.selectionStyle = .none
+        
     }
     
     required init?(coder: NSCoder) {

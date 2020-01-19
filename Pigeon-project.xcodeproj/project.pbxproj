@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
 		473990D923D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */; };
+		473990DB23D3399500ADCA86 /* StatusImageDisplayViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */; };
+		473990DD23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */; };
 		47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */; };
 		47B8434F23CEA69000D9406D /* MyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
@@ -208,6 +210,8 @@
 /* Begin PBXFileReference section */
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsStatusTableViewCell.swift; sourceTree = "<group>"; };
+		473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageDisplayViewControler.swift; sourceTree = "<group>"; };
+		473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusTableViewCell.swift; sourceTree = "<group>"; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -441,6 +445,8 @@
 				47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */,
 				47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */,
 				473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */,
+				473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */,
+				473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */,
 			);
 			path = StatusControllers;
 			sourceTree = "<group>";
@@ -1453,6 +1459,7 @@
 				4B6521FA219B3A4400FF655E /* GroupMembersManager.swift in Sources */,
 				4BAEE46521272B380045AB10 /* AccountSettingsController.swift in Sources */,
 				4BAEE51E21272D890045AB10 /* ChatLogController+VoiceRecordingHandlers.swift in Sources */,
+				473990DD23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift in Sources */,
 				4BAEE5CD212735E50045AB10 /* SelectParticipantsTableView.swift in Sources */,
 				4BAEE50221272D890045AB10 /* ChatsTableViewController.swift in Sources */,
 				4BAEE5EE212735E50045AB10 /* SelectNewAdminTableViewController+SearchHandlers.swift in Sources */,
@@ -1522,6 +1529,7 @@
 				4BAEE5D5212735E50045AB10 /* AnnouncementShowing.swift in Sources */,
 				4BAEE5BD212735E50045AB10 /* INSPhoto.swift in Sources */,
 				4BAEE49921272C5E0045AB10 /* ContactsController+SearchHandlers.swift in Sources */,
+				473990DB23D3399500ADCA86 /* StatusImageDisplayViewControler.swift in Sources */,
 				4BAEE5CF212735E50045AB10 /* CollectionViewLeftAlignFlowLayout.swift in Sources */,
 				4BA1E77F2152518700391BCB /* ChatLogController+MessageSenderDelegate.swift in Sources */,
 				4BB46C6A2136E6F8005405BB /* ChatLogHistoryFetcher.swift in Sources */,

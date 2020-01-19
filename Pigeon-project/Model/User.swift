@@ -18,6 +18,9 @@ class User: NSObject {
   var phoneNumber: String?
   var onlineStatus: AnyObject?
   var isSelected: Bool! = false // local only
+    var statusURL:String?
+    var statusMediaType:String?
+    var statusTimeStamp:String?
   
   init(dictionary: [String: AnyObject]) {
     id = dictionary["id"] as? String
@@ -27,6 +30,9 @@ class User: NSObject {
     thumbnailPhotoURL = dictionary["thumbnailPhotoURL"] as? String
     phoneNumber = dictionary["phoneNumber"] as? String
     onlineStatus = dictionary["OnlineStatus"]// as? AnyObject
+    statusURL = dictionary["status"] as? String
+    statusMediaType = dictionary["statusMediaType"] as? String
+    statusTimeStamp = dictionary["statusTimeStamp"] as? String
   }
 }
 

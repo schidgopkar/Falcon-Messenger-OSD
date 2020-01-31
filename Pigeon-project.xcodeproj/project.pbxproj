@@ -11,6 +11,8 @@
 		473990D923D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */; };
 		473990DB23D3399500ADCA86 /* StatusImageDisplayViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */; };
 		473990DD23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */; };
+		475AE51523E41AD500D2D8F0 /* Pigeon_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */; };
+		475AE51D23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */; };
 		47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */; };
 		47B8434F23CEA69000D9406D /* MyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
@@ -194,6 +196,16 @@
 		4BE44DAA212B5CC600E722B8 /* ContactsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE44DA9212B5CC600E722B8 /* ContactsFetcher.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		475AE51723E41AD500D2D8F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B4F45231F32230C00A6FF96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B4F452A1F32230C00A6FF96;
+			remoteInfo = "Pigeon-project";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4B9AF38E1F3B9B6E00A3934D /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -212,6 +224,10 @@
 		473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsStatusTableViewCell.swift; sourceTree = "<group>"; };
 		473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageDisplayViewControler.swift; sourceTree = "<group>"; };
 		473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVideoPlayerViewController.swift; sourceTree = "<group>"; };
+		475AE51223E41AD500D2D8F0 /* Pigeon-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pigeon-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pigeon_projectTests.swift; sourceTree = "<group>"; };
+		475AE51623E41AD500D2D8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberControllerTests.swift; sourceTree = "<group>"; };
 		47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusTableViewCell.swift; sourceTree = "<group>"; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -402,6 +418,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		475AE50F23E41AD500D2D8F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B4F45281F32230C00A6FF96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -439,6 +462,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		475AE51323E41AD500D2D8F0 /* Pigeon-projectTests */ = {
+			isa = PBXGroup;
+			children = (
+				475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */,
+				475AE51623E41AD500D2D8F0 /* Info.plist */,
+				475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */,
+			);
+			path = "Pigeon-projectTests";
+			sourceTree = "<group>";
+		};
 		47B8434B23CE0B0300D9406D /* StatusControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				4B4F452D1F32230C00A6FF96 /* Pigeon-project */,
+				475AE51323E41AD500D2D8F0 /* Pigeon-projectTests */,
 				4B4F452C1F32230C00A6FF96 /* Products */,
 				E788FC79B73E9599A409079F /* Pods */,
 				2AF4427B37282913090A248D /* Frameworks */,
@@ -465,6 +499,7 @@
 			isa = PBXGroup;
 			children = (
 				4B4F452B1F32230C00A6FF96 /* Pigeon-project.app */,
+				475AE51223E41AD500D2D8F0 /* Pigeon-projectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1238,6 +1273,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		475AE51123E41AD500D2D8F0 /* Pigeon-projectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 475AE51B23E41AD600D2D8F0 /* Build configuration list for PBXNativeTarget "Pigeon-projectTests" */;
+			buildPhases = (
+				475AE50E23E41AD500D2D8F0 /* Sources */,
+				475AE50F23E41AD500D2D8F0 /* Frameworks */,
+				475AE51023E41AD500D2D8F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				475AE51823E41AD500D2D8F0 /* PBXTargetDependency */,
+			);
+			name = "Pigeon-projectTests";
+			productName = "Pigeon-projectTests";
+			productReference = 475AE51223E41AD500D2D8F0 /* Pigeon-projectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4B4F452A1F32230C00A6FF96 /* Pigeon-project */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B4F453F1F32230C00A6FF96 /* Build configuration list for PBXNativeTarget "Pigeon-project" */;
@@ -1264,10 +1317,16 @@
 		4B4F45231F32230C00A6FF96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Roman Mizin";
 				TargetAttributes = {
+					475AE51123E41AD500D2D8F0 = {
+						CreatedOnToolsVersion = 11.3;
+						DevelopmentTeam = A3WPJ33XN8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4B4F452A1F32230C00A6FF96;
+					};
 					4B4F452A1F32230C00A6FF96 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = V3XD35MLBA;
@@ -1298,11 +1357,19 @@
 			projectRoot = "";
 			targets = (
 				4B4F452A1F32230C00A6FF96 /* Pigeon-project */,
+				475AE51123E41AD500D2D8F0 /* Pigeon-projectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		475AE51023E41AD500D2D8F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B4F45291F32230C00A6FF96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1364,6 +1431,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		475AE50E23E41AD500D2D8F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475AE51D23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift in Sources */,
+				475AE51523E41AD500D2D8F0 /* Pigeon_projectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4B4F45271F32230C00A6FF96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1538,7 +1614,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		475AE51823E41AD500D2D8F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B4F452A1F32230C00A6FF96 /* Pigeon-project */;
+			targetProxy = 475AE51723E41AD500D2D8F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		475AE51923E41AD600D2D8F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Pigeon-projectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Pigeon-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pigeon-project.app/Pigeon-project";
+			};
+			name = Debug;
+		};
+		475AE51A23E41AD600D2D8F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Pigeon-projectTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shrikantchidgopkar.psb.Pigeon-projectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pigeon-project.app/Pigeon-project";
+			};
+			name = Release;
+		};
 		4B4F453D1F32230C00A6FF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1734,6 +1862,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		475AE51B23E41AD600D2D8F0 /* Build configuration list for PBXNativeTarget "Pigeon-projectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				475AE51923E41AD600D2D8F0 /* Debug */,
+				475AE51A23E41AD600D2D8F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4B4F45261F32230C00A6FF96 /* Build configuration list for PBXProject "Pigeon-project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

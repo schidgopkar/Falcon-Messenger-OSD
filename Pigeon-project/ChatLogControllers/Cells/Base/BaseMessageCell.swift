@@ -121,6 +121,21 @@ class BaseMessageCell: RevealableCollectionViewCell {
    
     }
     
+    @objc func update() {
+        if(count! > 0) {
+            count = count! - 1
+            messageSelfDestructionCountdownLabel.text = "Self Destruct in " + String(count!) + " seconds"
+        }else{
+            timer?.invalidate()
+            DispatchQueue.main.async {
+                self.circleLayer.removeFromSuperlayer()
+                self.messageSelfDestructionCountdownLabel.isHidden = true
+                self.messageSelfDestructionCountdownLabel.layoutIfNeeded()
+            }
+        }
+    }
+
+    
     
     private var circleLayer = CAShapeLayer()
 
@@ -151,19 +166,6 @@ class BaseMessageCell: RevealableCollectionViewCell {
     
   
     
-    @objc func update() {
-        if(count! > 0) {
-            count = count! - 1
-            messageSelfDestructionCountdownLabel.text = "Self Destruct in " + String(count!) + " seconds"
-        }else{
-            timer?.invalidate()
-            DispatchQueue.main.async {
-                self.circleLayer.removeFromSuperlayer()
-                self.messageSelfDestructionCountdownLabel.isHidden = true
-                self.messageSelfDestructionCountdownLabel.layoutIfNeeded()
-            }
-        }
-    }
     
     func setupTimestampView(message: Message, isOutgoing: Bool) {
         DispatchQueue.main.async {

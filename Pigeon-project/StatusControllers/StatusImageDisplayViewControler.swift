@@ -52,27 +52,19 @@ class StatusImageDisplayViewControler: UIViewController {
         
             guard let imageReferenceURL = URL(string: imageReference) else {return}
         
-            
             statusImageView.sd_setImage(with: imageReferenceURL) { (image, error, cache, url) in
                 if let error = error{
                     print(error)
                 }
-                
                 UIView.animate(withDuration: 4.0) {
                                   self.progressView.setProgress(1.0, animated: true)
                                   self.progressView.layoutIfNeeded()
                                    }
-
-                                          
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 4.0) {
                               self.dismiss(animated: true, completion: nil)
                           }
-
-          
             }
-
     }
-    
     
     
     override func viewDidLoad() {

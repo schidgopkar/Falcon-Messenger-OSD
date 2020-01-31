@@ -149,5 +149,13 @@ class StatusVideoPlayerViewController: UIViewController {
         self.setupViews()
         
     }
+
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(true)
+        
+        self.avplayerViewController.player = nil
+
+    }
     
 }

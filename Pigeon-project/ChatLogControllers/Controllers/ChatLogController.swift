@@ -558,26 +558,24 @@ class ChatLogController: UICollectionViewController {
     return ""
   }
 
-  func setRightBarButtonItem () {
-    let infoButton = UIButton(type: .infoLight)
-    infoButton.addTarget(self, action: #selector(getInfoAction), for: .touchUpInside)
-    let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
-
-    let voiceChatButton = UIBarButtonItem(image: UIImage(named: "voiceChat"), style: .plain, target: self, action: #selector(voiceChatBarButtonTapped))
-    
-    navigationItem.setRightBarButtonItems([infoBarButtonItem, voiceChatButton], animated: false)
-    
-    guard let uid = Auth.auth().currentUser?.uid, let conversationID = conversation?.chatID, uid != conversationID else { return }
-    if isCurrentUserMemberOfCurrentGroup() {
-      navigationItem.rightBarButtonItem?.isEnabled = true
-    } else {
-      navigationItem.rightBarButtonItem?.isEnabled = false
+    func setRightBarButtonItem () {
+        let infoButton = UIButton(type: .infoLight)
+        infoButton.addTarget(self, action: #selector(getInfoAction), for: .touchUpInside)
+        let infoBarButtonItem = UIBarButtonItem(customView: infoButton)
+        
+        let voiceChatButton = UIBarButtonItem(image: UIImage(named: "voiceChat"), style: .plain, target: self, action: #selector(voiceChatBarButtonTapped))
+        
+        navigationItem.setRightBarButtonItems([infoBarButtonItem, voiceChatButton], animated: false)
+        
+        guard let uid = Auth.auth().currentUser?.uid, let conversationID = conversation?.chatID, uid != conversationID else { return }
+        if isCurrentUserMemberOfCurrentGroup() {
+            navigationItem.rightBarButtonItem?.isEnabled = true
+        } else {
+            navigationItem.rightBarButtonItem?.isEnabled = false
+        }
     }
-  }
-    
     
     @objc func voiceChatBarButtonTapped(){
-        
         
         let voiceChatViewController = VoiceChatController()
         

@@ -19,7 +19,6 @@ class VoiceChatController: UIViewController {
     
     var agoraKit: AgoraRtcEngineKit!
     
-    
     var topContainerView:UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -36,7 +35,6 @@ class VoiceChatController: UIViewController {
         return label
     }()
     
-    
     var partnerNameLabel:UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -45,7 +43,6 @@ class VoiceChatController: UIViewController {
         label.textAlignment = .center
         return label
     }()
-    
     
     var bottomContainerView:UIView = {
         let view = UIView()
@@ -179,42 +176,28 @@ class VoiceChatController: UIViewController {
     }
     
     func leaveChannel() {
-        
         agoraKit.leaveChannel(nil)
-        
         UIApplication.shared.isIdleTimerDisabled = false
     }
     
     
     @objc func toggleMuteChatButton(){
-        
         muteChatButton.isSelected = !muteChatButton.isSelected
-        
         agoraKit.muteLocalAudioStream(muteChatButton.isSelected)
-        
-        
     }
     
     @objc func toggleSpeakerButton(){
-        
         speakerButton.isSelected = !speakerButton.isSelected
-        
         agoraKit.setEnableSpeakerphone(speakerButton.isSelected)
-        
-        
     }
     
     @objc func endVoiceChatButtonPressed(){
-        
         leaveChannel()
-        
         self.dismiss(animated: true, completion: nil)
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.setUpViews()
         initializeAgoraEngine()
         joinChannel()

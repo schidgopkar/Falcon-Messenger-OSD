@@ -87,11 +87,14 @@ class StatusTableViewController: UITableViewController, FalconUsersUpdatesDelega
         
         if indexPath.section == 1{
             
-            
+            let currentRowUser = self.usersWithStatusUpdates[indexPath.row]
             
             cell.addStatusImageView.isHidden = true
-            cell.myStatusLabel.text = self.usersWithStatusUpdates[indexPath.row].name!
-            cell.addStatusLabel.text = self.createDateTime(timestamp: <#T##String#>)
+            cell.myStatusLabel.text = currentRowUser.name!
+            if let statusTimeStamp = currentRowUser.statusTimeStamp{
+                cell.addStatusLabel.text = self.createDateTime(timestamp: statusTimeStamp )
+            }
+            
         }
         
         return cell
@@ -290,7 +293,7 @@ class StatusTableViewController: UITableViewController, FalconUsersUpdatesDelega
             let timezone = TimeZone.current.abbreviation() ?? "CET"  // get current TimeZone abbreviation or set to CET
             dateFormatter.timeZone = TimeZone(abbreviation: timezone) //Set timezone that you want
             dateFormatter.locale = NSLocale.current
-            dateFormatter.dateFormat = "dd.MM.yyyy HH:mm" //Specify your format that you want
+            dateFormatter.dateFormat = "MMM d, h:mm a" //Specify your format that you want
             strDate = dateFormatter.string(from: date)
         }
             
@@ -300,14 +303,11 @@ class StatusTableViewController: UITableViewController, FalconUsersUpdatesDelega
     
     func uploadImage(image:UIImage, completion: @escaping ()-> Void){
         
-        
         let imageName:String = String("\(Date().timeIntervalSince1970).jpg")
         
         let statusImageReference = storageReference.child("statusMedia").child(imageName)
         
-        
         guard let uploadData = image.jpegData(compressionQuality: 0.3) else {return}
-        
         
         let uploadTask = statusImageReference.putData(uploadData, metadata: nil)
         
@@ -315,9 +315,7 @@ class StatusTableViewController: UITableViewController, FalconUsersUpdatesDelega
             
             let percentComplete = 100.0 * Double(snapshot.progress!.completedUnitCount)
                 / Double(snapshot.progress!.totalUnitCount)
-            
             ARSLineProgress.showWithProgress(initialValue: CGFloat(percentComplete))
-            
         }
         
         uploadTask.observe(.success) { (snapshot) in
@@ -344,11 +342,8 @@ class StatusTableViewController: UITableViewController, FalconUsersUpdatesDelega
                     }
                     completion()
                 }
-                
-                
             }
         }
-        
     }
     
     

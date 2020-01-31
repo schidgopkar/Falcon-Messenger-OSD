@@ -175,7 +175,7 @@ extension BaseMessageCell {
         let userMessageReference = Database.database().reference().child("user-messages")
         
         guard let indexPath = self.chatLogController?.collectionView?.indexPath(for: self) else { return }
-                
+        
         guard let uid = Auth.auth().currentUser?.uid, let partnerID = self.message?.chatPartnerId(),
             let messageID = self.message?.messageUID, self.currentReachabilityStatus != .notReachable else {
                 self.chatLogController?.collectionView?.reloadItems(at: [indexPath])
@@ -233,7 +233,7 @@ extension BaseMessageCell {
                 print("\ncell deletion completed\n")
             })
         })
-
+        
     }
     
     

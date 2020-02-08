@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0FAA5290B818B51BB8CD0A55 /* libPods-Pigeon-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2897810158A4718FAC892931 /* libPods-Pigeon-project.a */; };
+		472071A423E9B5F5003AFAEC /* EnterPhoneNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071A323E9B5F5003AFAEC /* EnterPhoneNumberViewModel.swift */; };
+		472071A623E9B905003AFAEC /* EnterPhoneNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071A523E9B905003AFAEC /* EnterPhoneNumberModel.swift */; };
+		472071A823E9BBAA003AFAEC /* phoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071A723E9BBAA003AFAEC /* phoneNumberValidator.swift */; };
+		472071AA23E9E9BB003AFAEC /* EnterPhoneNumberProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071A923E9E9BB003AFAEC /* EnterPhoneNumberProtocol.swift */; };
+		472071AC23EA153D003AFAEC /* MockPhoneNumberValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071AB23EA153D003AFAEC /* MockPhoneNumberValidator.swift */; };
+		472071AE23EA165C003AFAEC /* PhoneNumberValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071AD23EA165C003AFAEC /* PhoneNumberValidatorTests.swift */; };
+		472071B023EAC930003AFAEC /* EnterPhoneNumberViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472071AF23EAC930003AFAEC /* EnterPhoneNumberViewModelTests.swift */; };
 		473990D923D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */; };
 		473990DB23D3399500ADCA86 /* StatusImageDisplayViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */; };
 		473990DD23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */; };
 		475AE51523E41AD500D2D8F0 /* Pigeon_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */; };
-		475AE51D23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */; };
+		475AE52023E41BED00D2D8F0 /* MockEnterPhoneNumberLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475AE51F23E41BED00D2D8F0 /* MockEnterPhoneNumberLoginController.swift */; };
 		47B8434D23CE0B5700D9406D /* StatusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */; };
 		47B8434F23CEA69000D9406D /* MyStatusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */; };
 		47E58ACA23C9D0C800945AE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */; };
@@ -194,6 +201,7 @@
 		4BB46C6A2136E6F8005405BB /* ChatLogHistoryFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB46C692136E6F8005405BB /* ChatLogHistoryFetcher.swift */; };
 		4BB46C6C2136E71F005405BB /* ChatLogController+ChatHistoryFetcherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB46C6B2136E71F005405BB /* ChatLogController+ChatHistoryFetcherDelegate.swift */; };
 		4BE44DAA212B5CC600E722B8 /* ContactsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE44DA9212B5CC600E722B8 /* ContactsFetcher.swift */; };
+		E8D4589BDC8282CC2B66DAD4 /* libPods-Pigeon-projectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE2E60F040A0966CC3531B /* libPods-Pigeon-projectTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,14 +228,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		279732ABE9404C64A21AFAAB /* Pods-Pigeon-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pigeon-projectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pigeon-projectTests/Pods-Pigeon-projectTests.release.xcconfig"; sourceTree = "<group>"; };
 		2897810158A4718FAC892931 /* libPods-Pigeon-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		472071A323E9B5F5003AFAEC /* EnterPhoneNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberViewModel.swift; sourceTree = "<group>"; };
+		472071A523E9B905003AFAEC /* EnterPhoneNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberModel.swift; sourceTree = "<group>"; };
+		472071A723E9BBAA003AFAEC /* phoneNumberValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneNumberValidator.swift; sourceTree = "<group>"; };
+		472071A923E9E9BB003AFAEC /* EnterPhoneNumberProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberProtocol.swift; sourceTree = "<group>"; };
+		472071AB23EA153D003AFAEC /* MockPhoneNumberValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhoneNumberValidator.swift; sourceTree = "<group>"; };
+		472071AD23EA165C003AFAEC /* PhoneNumberValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberValidatorTests.swift; sourceTree = "<group>"; };
+		472071AF23EAC930003AFAEC /* EnterPhoneNumberViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberViewModelTests.swift; sourceTree = "<group>"; };
 		473990D823D1D5B600ADCA86 /* ContactsStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsStatusTableViewCell.swift; sourceTree = "<group>"; };
 		473990DA23D3399500ADCA86 /* StatusImageDisplayViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageDisplayViewControler.swift; sourceTree = "<group>"; };
 		473990DC23D34D4D00ADCA86 /* StatusVideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVideoPlayerViewController.swift; sourceTree = "<group>"; };
 		475AE51223E41AD500D2D8F0 /* Pigeon-projectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pigeon-projectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pigeon_projectTests.swift; sourceTree = "<group>"; };
 		475AE51623E41AD500D2D8F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneNumberControllerTests.swift; sourceTree = "<group>"; };
+		475AE51F23E41BED00D2D8F0 /* MockEnterPhoneNumberLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEnterPhoneNumberLoginController.swift; sourceTree = "<group>"; };
 		47B8434C23CE0B5700D9406D /* StatusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTableViewController.swift; sourceTree = "<group>"; };
 		47B8434E23CEA69000D9406D /* MyStatusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusTableViewCell.swift; sourceTree = "<group>"; };
 		47E58AC923C9D0C800945AE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -413,6 +429,8 @@
 		4BB46C6B2136E71F005405BB /* ChatLogController+ChatHistoryFetcherDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatLogController+ChatHistoryFetcherDelegate.swift"; sourceTree = "<group>"; };
 		4BE44DA9212B5CC600E722B8 /* ContactsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFetcher.swift; sourceTree = "<group>"; };
 		4BE9F1DE219B457C00C6768F /* Pigeon-project.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pigeon-project.entitlements"; sourceTree = "<group>"; };
+		5ABE2E60F040A0966CC3531B /* libPods-Pigeon-projectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pigeon-projectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C316D6F0979C18F217AAAE7 /* Pods-Pigeon-projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pigeon-projectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pigeon-projectTests/Pods-Pigeon-projectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B9AFAE7ED3D864CA90779BE /* Pods-Pigeon-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pigeon-project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pigeon-project/Pods-Pigeon-project.release.xcconfig"; sourceTree = "<group>"; };
 		9B9CAF682523EA718F4C503C /* Pods-Pigeon-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pigeon-project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pigeon-project/Pods-Pigeon-project.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -422,6 +440,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8D4589BDC8282CC2B66DAD4 /* libPods-Pigeon-projectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,8 +477,17 @@
 				47E58ADE23CB5F3800945AE0 /* CoreMedia.framework */,
 				47E58ADC23CB5F2800945AE0 /* SystemConfiguration.framework */,
 				2897810158A4718FAC892931 /* libPods-Pigeon-project.a */,
+				5ABE2E60F040A0966CC3531B /* libPods-Pigeon-projectTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		472071A223E97ECA003AFAEC /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				472071A323E9B5F5003AFAEC /* EnterPhoneNumberViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		475AE51323E41AD500D2D8F0 /* Pigeon-projectTests */ = {
@@ -467,9 +495,19 @@
 			children = (
 				475AE51423E41AD500D2D8F0 /* Pigeon_projectTests.swift */,
 				475AE51623E41AD500D2D8F0 /* Info.plist */,
-				475AE51C23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift */,
+				472071AD23EA165C003AFAEC /* PhoneNumberValidatorTests.swift */,
+				472071AF23EAC930003AFAEC /* EnterPhoneNumberViewModelTests.swift */,
 			);
 			path = "Pigeon-projectTests";
+			sourceTree = "<group>";
+		};
+		475AE51E23E41BBB00D2D8F0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				475AE51F23E41BED00D2D8F0 /* MockEnterPhoneNumberLoginController.swift */,
+				472071AB23EA153D003AFAEC /* MockPhoneNumberValidator.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		47B8434B23CE0B0300D9406D /* StatusControllers */ = {
@@ -507,6 +545,7 @@
 		4B4F452D1F32230C00A6FF96 /* Pigeon-project */ = {
 			isa = PBXGroup;
 			children = (
+				475AE51E23E41BBB00D2D8F0 /* Mocks */,
 				47B8434B23CE0B0300D9406D /* StatusControllers */,
 				4BE9F1DE219B457C00C6768F /* Pigeon-project.entitlements */,
 				4BAEE47221272C4F0045AB10 /* AuthenticationControllers */,
@@ -1165,9 +1204,13 @@
 		4BAEE59B212735E50045AB10 /* EnterPhoneControllers */ = {
 			isa = PBXGroup;
 			children = (
+				472071A223E97ECA003AFAEC /* viewModel */,
 				4BAEE59C212735E50045AB10 /* SelectCountryCodeController.swift */,
 				4BAEE59D212735E50045AB10 /* EnterPhoneNumberController.swift */,
 				4BAEE59E212735E50045AB10 /* EnterPhoneNumberContainerView.swift */,
+				472071A523E9B905003AFAEC /* EnterPhoneNumberModel.swift */,
+				472071A723E9BBAA003AFAEC /* phoneNumberValidator.swift */,
+				472071A923E9E9BB003AFAEC /* EnterPhoneNumberProtocol.swift */,
 			);
 			path = EnterPhoneControllers;
 			sourceTree = "<group>";
@@ -1266,6 +1309,8 @@
 			children = (
 				9B9CAF682523EA718F4C503C /* Pods-Pigeon-project.debug.xcconfig */,
 				8B9AFAE7ED3D864CA90779BE /* Pods-Pigeon-project.release.xcconfig */,
+				5C316D6F0979C18F217AAAE7 /* Pods-Pigeon-projectTests.debug.xcconfig */,
+				279732ABE9404C64A21AFAAB /* Pods-Pigeon-projectTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1277,6 +1322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 475AE51B23E41AD600D2D8F0 /* Build configuration list for PBXNativeTarget "Pigeon-projectTests" */;
 			buildPhases = (
+				032D44B7DB5E016CBC4A7C42 /* [CP] Check Pods Manifest.lock */,
 				475AE50E23E41AD500D2D8F0 /* Sources */,
 				475AE50F23E41AD500D2D8F0 /* Frameworks */,
 				475AE51023E41AD500D2D8F0 /* Resources */,
@@ -1390,6 +1436,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		032D44B7DB5E016CBC4A7C42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pigeon-projectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		92B3139BCF183B65AB86C41F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1435,8 +1503,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475AE51D23E41B2D00D2D8F0 /* EnterPhoneNumberControllerTests.swift in Sources */,
+				472071AE23EA165C003AFAEC /* PhoneNumberValidatorTests.swift in Sources */,
+				472071AC23EA153D003AFAEC /* MockPhoneNumberValidator.swift in Sources */,
+				472071B023EAC930003AFAEC /* EnterPhoneNumberViewModelTests.swift in Sources */,
 				475AE51523E41AD500D2D8F0 /* Pigeon_projectTests.swift in Sources */,
+				475AE52023E41BED00D2D8F0 /* MockEnterPhoneNumberLoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1458,6 +1529,7 @@
 				4BAEE46E21272B380045AB10 /* Biometrics.swift in Sources */,
 				4BAEE4F221272D890045AB10 /* SelectChatTableViewController.swift in Sources */,
 				4BAEE50521272D890045AB10 /* MediaPicerControllerNew+ImagePicker.swift in Sources */,
+				472071A823E9BBAA003AFAEC /* phoneNumberValidator.swift in Sources */,
 				4BAEE50821272D890045AB10 /* UserCell.swift in Sources */,
 				4BAEE5E1212735E50045AB10 /* ImagePickerTrayController.swift in Sources */,
 				4BAEE5B5212735E50045AB10 /* INSPhotosDataSource.swift in Sources */,
@@ -1485,6 +1557,7 @@
 				4BAEE46B21272B380045AB10 /* SwitchTableViewController.swift in Sources */,
 				4BAEE48421272C4F0045AB10 /* AuthPhoneNumberController.swift in Sources */,
 				4BAEE50B21272D890045AB10 /* UserCell+ConfigureCell.swift in Sources */,
+				472071A423E9B5F5003AFAEC /* EnterPhoneNumberViewModel.swift in Sources */,
 				4BA1E77A215250F900391BCB /* StorageMediaUploader.swift in Sources */,
 				4BAEE48721272C4F0045AB10 /* OnboardingContainerView.swift in Sources */,
 				4BAEE5CE212735E50045AB10 /* SelectParticipantsViewController+SearchHandlers.swift in Sources */,
@@ -1514,6 +1587,7 @@
 				4BAEE54E212735880045AB10 /* Message.swift in Sources */,
 				4BAEE5BB212735E50045AB10 /* INSPhotosOverlayView.swift in Sources */,
 				4BAEE50C21272D890045AB10 /* UserInfoTableViewController+handlers.swift in Sources */,
+				472071A623E9B905003AFAEC /* EnterPhoneNumberModel.swift in Sources */,
 				4BAEE50921272D890045AB10 /* SelectedMediaCollectionCell+timerHandlers.swift in Sources */,
 				4BAEE5DF212735E50045AB10 /* UIEdgeInsetsExtensions.swift in Sources */,
 				4BAEE5E8212735E50045AB10 /* EnterPhoneNumberController.swift in Sources */,
@@ -1608,6 +1682,7 @@
 				473990DB23D3399500ADCA86 /* StatusImageDisplayViewControler.swift in Sources */,
 				4BAEE5CF212735E50045AB10 /* CollectionViewLeftAlignFlowLayout.swift in Sources */,
 				4BA1E77F2152518700391BCB /* ChatLogController+MessageSenderDelegate.swift in Sources */,
+				472071AA23E9E9BB003AFAEC /* EnterPhoneNumberProtocol.swift in Sources */,
 				4BB46C6A2136E6F8005405BB /* ChatLogHistoryFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1625,6 +1700,7 @@
 /* Begin XCBuildConfiguration section */
 		475AE51923E41AD600D2D8F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C316D6F0979C18F217AAAE7 /* Pods-Pigeon-projectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1648,6 +1724,7 @@
 		};
 		475AE51A23E41AD600D2D8F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279732ABE9404C64A21AFAAB /* Pods-Pigeon-projectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

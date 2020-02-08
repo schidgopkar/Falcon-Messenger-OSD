@@ -16,5 +16,10 @@ target 'Pigeon-project' do
   pod 'FTPopOverMenu_Swift', '~> 0.1.4'
   pod 'CropViewController'
 	pod 'ARSLineProgress'
+  
+  target 'Pigeon-projectTests' do
+     inherit! :search_paths
+
+   end
 
 end
